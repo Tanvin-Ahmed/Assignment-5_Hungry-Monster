@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><h2>Hungry Monster</h2></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="m-auto"></div>
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="">Services</a>
+                            <a class="nav-link" href="">Food</a>
+                            <a class="nav-link" href="">Safe</a>
+                            <a class="nav-link" href="">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <!-- search bar -->
+        <section class="search-bar">
+            <input id="search-input" type="text" placeholder="Search food...">
+            <button class="btn btn-success" type="submit" id="submit">Search</button>
+        </section>
+        <!-- error -->
+        <div id="error">
+            <h1>Ops!</h1>
+            <h2>There is no food by this name in our restaurant</h2>
+        </div>
+        <!-- show clicked food detail -->
+        <section id="food-detail">
+            <div></div>
+        </section>
+        <!-- show result -->
+        <div id="find-foods"></div>
+
+    </main>
+    <!-- custom js link -->
+    <script src="main.js"></script>
+</body>
+
+</html>
