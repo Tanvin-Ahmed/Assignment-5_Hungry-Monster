@@ -5,7 +5,7 @@ document.getElementById('submit').addEventListener('click', () => {
     nameCall(input);
 })
 
-// Name API call
+// API call
 let nameCall = async (input) => {
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
@@ -27,7 +27,7 @@ let categorySearchResult = (meals) => {
     // when find any foods
     document.getElementById('error').style.display = 'none';
     document.getElementById('find-foods').style.display = 'flex';
-    // show foods
+    // show food list
     const foodItems = document.getElementById('find-foods');
     foodItems.innerHTML = '';
     meals.forEach(meal => {
